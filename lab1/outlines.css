@@ -1,0 +1,17 @@
+.clipped {
+    clip-path: circle(50% at 50% 50%);
+    margin: 0cqmax;
+}
+
+.text {
+    align-self: flex-end;
+  }
+
+  .image {
+    width: 42px;
+    height: 42px;
+  }
+
+  .paragraph {
+    display: flex;
+  }
