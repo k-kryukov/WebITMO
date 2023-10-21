@@ -18,9 +18,9 @@
     </head>
 
     <body>
-        <header>
-            <h1> Сайт-блог Константина Крюкова </h1>
-            <img src="photo_small.jpg" alt="Personal photo" class="image">
+        <header id="top_header">
+            <img src="photo_small.jpg" id="personal_photo" alt="Personal photo" class="image">
+            <h1 id="biggest_title"> Сайт-блог Константина Крюкова </h1>
         </header>
 
         <hr>
@@ -28,17 +28,17 @@
         <main>
             <article id="kkryukov_blog">
                 <nav>
-                    <h2> Навигация по странице </h2>
+                    <h2 class="section_header"> Навигация по странице </h2>
                     <ol>
-                        <li> <a href="#about_me"> Обо мне </a> </li>
-                        <li> <a href="#hobby"> Хобби </a> </li>
-                        <li> <a href="#professional-interests"> Профессиональные интересы </a> </li>
-                        <li> <a href="#success-formula"> Формула моего успеха </a> </li>
+                        <li class="section_link"> <a href="#about_me"> Обо мне </a> </li>
+                        <li class="section_link"> <a href="#hobby"> Хобби </a> </li>
+                        <li class="section_link"> <a href="#professional-interests"> Профессиональные интересы </a> </li>
+                        <li class="section_link"> <a href="#success-formula"> Формула моего успеха </a> </li>
                     </ol>
                 </nav>
 
                 <section id="about_me">
-                    <h2> Обо мне </h2>
+                    <h2 class="section_header"> Обо мне </h2>
                     <p> Родился в Питере в 2002 году и прожил здесь всю свою жизнь. </p>
                     <p> В детстве хотел стать полицейским, пожарным, инженером, архитектором и много кем ещё </p>
                     <p> После 5 класса поступил в физмат лицей, в котором и учился до выпуска. </p>
@@ -50,25 +50,26 @@
                 </section>
 
                 <section id="hobby">
-                    <h2> Мои хобби и интересы </h2>
+                    <h2 class="section_header"> Мои хобби и интересы </h2>
                     <p> Играю в волейбол уже 5 лет. В свободное время играю иногда в бильярд и <s> курю кальян </s> </p>
                     <p> Люблю учиться и узнавать новое для себя, чувствовать прогресс и бенефит от своей работы </p>
                 </section>
 
                 <section id="professional-interests">
-                    <h2> Профессиональные интересы </h2>
+                    <h2 class="section_header"> Профессиональные интересы </h2>
                     <p> С 8 класса изучал язык С, в 11 открыл для себя C++ и с того момента изучаю его различные применения </p>
                     <p> Никогда не понимал, как можно не любить язык, в котором можно написать 4 строчки кода и получить больше 250 строк ошибок: </p>
                     <pre>
-                        <code>
+                        <code> <b>
 #include &lt;unordered_map&gt;
 void main() {
     std::unordered_map m{{1, std::unordered_map{}, 3, 4}};
 }
-                        </code>
+
 kkrykov@nb-dseleznyov:/tmp/test-cpp$ g++-12 a.cpp 2>&1 | wc -l
 350
-                    </pre>
+                        </b> </code>
+</pre>
                     <p> Любимая цитата про C++ </p>
                     <blockquote>
                         «При помощи C вы легко можете выстрелить себе в ногу. При помощи C++ это сделать сложнее, но если это произойдёт, <strong> вам оторвёт всю ногу целиком. </strong>»
@@ -77,7 +78,7 @@ kkrykov@nb-dseleznyov:/tmp/test-cpp$ g++-12 a.cpp 2>&1 | wc -l
                     </blockquote>
                 </section>
             <section id="success-formula">
-                <h2> <i> Формула моего успеха </i> </h2>
+                <h2 class="section_header"> <i> Формула моего успеха </i> </h2>
                 <p> &#8721;<sub>i</sub>(Цель<sub>i</sub> * Труд<sup>2</sup>) = Успех </p>
             </section>
 

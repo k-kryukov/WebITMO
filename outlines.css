@@ -1,17 +1,43 @@
-/* .clipped {
-    clip-path: circle(50% at 50% 50%);
-    margin: 0cqmax;
+
+html {
+  background-color: #000000;
+  color: #fd5c39;
 }
 
-.text {
-    align-self: flex-end;
-  }
+h1 {
+  color: #fd5c39;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
 
-  .image {
-    width: 42px;
-    height: 42px;
-  }
+#biggest_title {
+  margin: 0% 50% 0%;
+}
 
-  .paragraph {
-    display: flex;
-  } */
+#top_header {
+  display: grid;
+  align-items: center;
+  grid-template-columns: 1fr 1fr 1fr;
+  column-gap: 5px;
+}
+
+#personal_photo {
+  filter: drop-shadow(2px 2px 2px white);
+  margin-left: 5%;
+}
+
+.section_header {
+  color: #e8faee;
+}
+
+p {
+  color: #fd5c39;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+code {
+  font-weight: bold;
+}
+
+.section_link {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
