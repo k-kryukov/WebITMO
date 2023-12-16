@@ -70,7 +70,7 @@ p {
   color: var(--color-peer);
   text-align: center;
 }
-@media (max-width: 330px) {
+@media (max-width: 400px) {
   .header_title {
     display: none;
   }

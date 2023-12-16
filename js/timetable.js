@@ -16,7 +16,7 @@ window.addEventListener("DOMContentLoaded", function() {
         schedule[selectedDay] = []
       }
       schedule[selectedDay].push(EventName.value)
-  
+
       localStorage.setItem("schedule", JSON.stringify(schedule))
       UpdateEvents()
       EventName.value = ''
@@ -33,7 +33,7 @@ window.addEventListener("DOMContentLoaded", function() {
         events.forEach(event => {
           const Newevent = document.createElement('li')
           Newevent.classList.add("event")
-          
+
           const desc = document.createElement('p')
           desc.textContent = event
           Newevent.appendChild(desc)
