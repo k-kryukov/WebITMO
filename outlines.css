@@ -1,79 +1,17 @@
-
-.document {
-  background-color: #000000;
-  color: #fd5c39;
+/* .clipped {
+    clip-path: circle(50% at 50% 50%);
+    margin: 0cqmax;
 }
 
-.header_title {
-  margin: 0% 50% 0%;
-  color: #fd5c39;
-  font-size: 200%;
-  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-}
+.text {
+    align-self: flex-end;
+  }
 
-.header {
-  display: grid;
-  align-items: center;
-  grid-template-columns: 1fr 1fr 1fr;
-  column-gap: 5px;
-}
+  .image {
+    width: 42px;
+    height: 42px;
+  }
 
-.header_photo {
-  filter: drop-shadow(2px 2px 2px white);
-  margin-left: 5%;
-}
-
-.section_header {
-  color: #e8faee;
-  text-align: left;
-  background-color: #000000;
-  /* margin-left: 5% */
-}
-
-.section_header_p {
-  color: #fd5c39;
-  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-  line-height: normal;
-  font-weight: right;
-  text-align: left;
-  background-color: #000000;
-  margin-left: 5%
-}
-
-.section_header_aside {
-  color: #fd5c39;
-  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-  line-height: normal;
-  font-weight: right;
-  text-align: left;
-  background-color: #000000;
-  margin-left: 5%
-}
-
-.section_header_pre {
-  color: #fd5c39;
-  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-  line-height: normal;
-  font-weight: right;
-  text-align: left;
-  background-color: #000000;
-  margin-left: 5%
-}
-
-.section_header_blockquote {
-  color: #fd5c39;
-  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-  line-height: normal;
-  font-weight: right;
-  text-align: left;
-  background-color: #000000;
-  margin-left: 5%
-}
-
-.section_header_li {
-  font-family: Georgia, 'Times New Roman', Times, serif;
-}
-
-.section_header_blockquote {
-
-}
+  .paragraph {
+    display: flex;
+  } */

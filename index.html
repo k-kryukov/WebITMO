@@ -1,103 +1,87 @@
 <!DOCTYPE html>
 
-<html class="document">
-    <head>
+<html>
+  <head>
+    <title>Konstantin Kryukov</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="css/main.css"/>
+    <link rel="icon" href="../favicon.ico">
 
-        <link rel="stylesheet" href="outlines.css"/>
+    <script src="js/pageload.js"></script>
 
-        <title>
-            Konstantin Kryukov
-        </title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/a11y-dark.css"> Import highlight.js
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
+    <script>hljs.highlightAll();</script>
 
-        <meta charset="utf-8">
-
-        <meta name="keywords" content="константин крюков блог">
-
-        <meta name="description" content="Блог Константина Крюкова">
-
-    </head>
-
-    <body>
-        <header class="header">
-            <img class="header_photo" src="photo_small.jpg" alt="Personal photo">
-            <h1 class="header_title"> Сайт-блог Константина Крюкова </h1>
-        </header>
-
-        <hr>
-
-        <main>
-            <article>
-                <nav>
-                    <h2 class="section_header"> Навигация по странице </h2>
-                    <ol>
-                        <li class="section_header_li li"> <a href="#about_me"> Обо мне </a> </li>
-                        <li class="section_header_li li"> <a href="#hobby"> Хобби </a> </li>
-                        <li class="section_header_li li"> <a href="#professional-interests"> Профессиональные интересы </a> </li>
-                        <li class="section_header_li li"> <a href="#success-formula"> Формула моего успеха </a> </li>
-                    </ol>
-                </nav>
-
-                <div id="about-me-section">
-                    <section id="about_me">
-                        <h2 class="section_header"> Обо мне </h2>
-                        <p class="section_header_p p"> Родился в Питере в 2002 году и прожил здесь всю свою жизнь. </p>
-                        <p class="section_header_p p"> В детстве хотел стать полицейским, пожарным, инженером, архитектором и много кем ещё </p>
-                        <p class="section_header_p p"> После 5 класса поступил в физмат лицей, в котором и учился до выпуска. </p>
-                        <p class="section_header_p p"> К 10 классу наконец определился с профессией и решил стать программистом </p>
-                        <p class="section_header_p p"> Сейчас учусь в <a href="https://itmo.ru/"> Университете ИТМО </a> и работаю в <a href="https://yadro.com/"> YADRO </a> </p>
-                        <aside class="section_header_aside aside">
-                            <p> <b> Интересный факт обо мне: </b> в школе я был старшим во всей параллели </p>
-                        </aside>
-                    </section>
-                </div>
-
-                <div id="hobby-section">
-                    <section id="hobby">
-                        <h2 class="section_header"> Мои хобби и интересы </h2>
-                        <p class="section_header_p p"> Играю в волейбол уже 5 лет. В свободное время играю иногда в бильярд и <s> курю кальян </s> </p>
-                        <p class="section_header_p p"> Люблю учиться и узнавать новое для себя, чувствовать прогресс и бенефит от своей работы </p>
-                    </section>
-                </div>
-
-            <div id="professional-interests-section">
-                <section id="professional-interests">
-                    <h2 class="section_header"> Профессиональные интересы </h2>
-                    <p class="section_header_p p"> С 8 класса изучал язык С, в 11 открыл для себя C++ и с того момента изучаю его различные применения </p>
-                    <p class="section_header_p p"> Никогда не понимал, как можно не любить язык, в котором можно написать 4 строчки кода и получить больше 250 строк ошибок: </p>
-                    <pre class="section_header_pre pre">
-                        <code> <b>
+    <meta name="keywords" content="константин крюков блог">
+    <meta name="description" content="Блог Константина Крюкова">
+    <meta name="viewport" content="width=device-width">
+  </head>
+  <body>
+    <div class="container">
+      <header class="header">
+        <h1 class="header_title">Сайт-блог Константина Крюкова </h1>
+        <nav class="navigation">
+          <a class="navigation__link navigation--current" href="/">Home</a>
+          <a class="navigation__link" href="/timetable.html">Timetable</a>
+        </nav>
+        <img class="header_photo" src="photo_small.jpg" alt="Personal photo" class="image">
+      </header>
+      <main class="main">
+        <article id="kkryukov_blog">
+          <nav class="navbar section">
+            <h2 class="navbar__title">Навигация по странице</h2>
+            <div class="navbar__links">
+              <a class="navbar__link" href="#about_me"> Обо мне </a>
+              <a class="navbar__link" href="#hobby"> Хобби </a>
+              <a class="navbar__link" href="#professional-interests"> Профессиональные интересы </a>
+            </div>
+          </nav>
+          <section class="about section" id="about_me">
+            <h2 class="about__title">Обо мне</h2>
+            <div class="success-formula">
+              <h2 class="success-formula__title"><i> Формула моего успеха </i></h2>
+              <p class="success-formula__formula">&#8721;<sub>i</sub>(Цель<sub>i</sub> * Труд<sup>2</sup>) = Успех</p>
+            </div>
+            <p>Родился в Питере в 2002 году и прожил здесь всю свою жизнь. </p>
+            <p>В детстве хотел стать полицейским, пожарным, инженером, архитектором и много кем ещё </p>
+            <p>После 5 класса поступил в физмат лицей, в котором и учился до выпуска. </p>
+            <p>К 10 классу наконец определился с профессией и решил стать программистом </p>
+            <p>Сейчас учусь в <a href="https://itmo.ru/"> Университете ИТМО </a> и работаю в <a href="https://yadro.com/"> YADRO </a> </p>
+            <p>Интересный факт обо мне: в школе я был старшим во всей параллели</p>
+          </section>
+          <section class="hobby section" id="hobby">
+            <h2 class="hobby__titile"> Мои хобби и интересы </h2>
+            <p>Играю в волейбол уже 5 лет. В свободное время играю иногда в бильярд и <span class="line-through"> курю кальян </span></p>
+            <p>Люблю учиться и узнавать новое для себя, чувствовать прогресс и бенефит от своей работы </p>
+          </section>
+          <section class="interests section" id="professional-interests">
+            <h2 class="interests__title">Профессиональные интересы</h2>
+            <p>С 8 класса изучал язык С, в 11 открыл для себя C++ и с того момента изучаю его различные применения</p>
+            <p>Никогда не понимал, как можно не любить язык, в котором можно написать 4 строчки кода и получить больше 250 строк ошибок:</p>
+            <pre class="code-example">
+              <code class="language-c">
 #include &lt;unordered_map&gt;
 void main() {
     std::unordered_map m{{1, std::unordered_map{}, 3, 4}};
 }
-
-kkrykov@bubuntu:/tmp/test-cpp$ g++-12 a.cpp 2>&1 | wc -l
+              </code>
+              <code class="console">
+kkrykov@nb-dseleznyov:/tmp/test-cpp$ g++-12 a.cpp 2>&1 | wc -l
 350
-                        </b> </code>
-                    </pre>
-                    <p class="section_header_p p"> Любимая цитата про C++ </p>
-                    <blockquote class="section_header_blockquote blockquote">
-                        «При помощи C вы легко можете выстрелить себе в ногу. При помощи C++ это сделать сложнее, но если это произойдёт, <strong> вам оторвёт всю ногу целиком. </strong>»
-                        <br>
-                        <i> <b> Bjarne Stroustrup. Создатель C++ </b> </i>
-                    </blockquote>
-                </section>
-            </div>
-
-            <div id="success-formula-section">
-                <section id="success-formula">
-                    <h2 class="section_header"> <i> Формула моего успеха </i> </h2>
-                    <p class="section_header_p p"> &#8721;<sub>i</sub>(Цель<sub>i</sub> * Труд<sup>2</sup>) = Успех </p>
-                </section>
-            </div>
-
-            </article>
-        </main>
-
-        <footer>
-
-        </footer>
-
-    </body>
-
+              </code>
+            </pre>
+            <p class="blockquote__title"> Любимая цитата про C++ </p>
+            <blockquote class="blockquote">
+              <p class="blockquote__text">«При помощи C вы легко можете выстрелить себе в ногу. При помощи C++ это сделать сложнее, но если это произойдёт, вам оторвёт всю ногу целиком.»</p>
+              <cite class="blockquote__author">Bjarne Stroustrup. Создатель C++</cite>
+            </blockquote>
+          </section>
+        </article>
+      </main>
+      <footer class="footer">
+        <p id="time">Page loaded - ms</p>
+      </footer>
+    </div>
+  </body>
 </html>

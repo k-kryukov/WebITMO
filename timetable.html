@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Timetable</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="css//timetable.css"/>
+    <script src="js/timetable.js"></script>
+    <script src="js/pageload.js"></script>
+    <script src="js/LoadTosos.js"></script>
+    <meta name="keywords" content="константин крюков блог">
+    <meta name="description" content="Блог Константина Крюкова">
+    <meta name="viewport" content="width=device-width">
+  </head>
+  <body>
+    <div class="container">
+      <header class="header">
+        <nav class="navigation">
+          <a class="navigation__link" href="/">Home</a>
+          <a class="navigation__link navigation--current" href="/timetable.html">Timetable</a>
+        </nav>
+      </header>
+      <main class="main">
+        <form class="timetable" id="timetable">
+          <h2  class="timetable__title">Timetable</h2>
+          <div class="timetable__days">
+            <div class="day">
+              <p class="day__title">Monday</p>
+              <ul class="day__events" id="monday"></ul>
+            </div>
+            <div class="day">
+              <p class="day__title">Tuesday</p>
+              <ul class="day__events" id="tuesday"></ul>
+            </div>
+            <div class="day">
+              <p class="day__title">Wednesday</p>
+              <ul class="day__events" id="wednesday"></ul>
+            </div>
+            <div class="day">
+              <p class="day__title">Thursday</p>
+              <ul class="day__events" id="thursday"></ul>
+            </div>
+            <div class="day">
+              <p class="day__title">Friday</p>
+              <ul class="day__events" id="friday"></ul>
+            </div>
+            <div class="day">
+              <p class="day__title">Saturday</p>
+              <ul class="day__events" id="saturday"></ul>
+            </div>
+          </div>
+          <div class="timetable__create">
+            <select class="timetable__select" id="event-select">
+              <option value="monday" selected>Monday</option>
+              <option value="tuesday">Tuesday</option>
+              <option value="wednesday">Wednesday</option>
+              <option value="thursday">Thursday</option>
+              <option value="friday">Friday</option>
+              <option value="saturday">Saturday</option>
+            </select>
+            <input class="timetable__create-button" id="event-name" type="text" placeholder="Event">
+            <button class="timetable__submit" type="submit">Add</button>
+          </div>
+        </form>
+        <div class="tasks">
+          <h2 class="tasks__title">Tasks</h2>
+          <div class="tasks__items" id="tasks">
+            <div class="task-preloader"></div>
+            <div class="task-preloader"></div>
+            <div class="task-preloader"></div>
+            <div class="task-preloader"></div>
+            <div class="task-preloader"></div>
+          </div>
+        </div>
+      </main>
+      <footer class="footer">
+        <p id="time">Page loaded - ms</p>
+      </footer>
+    </div>
+  </body>
+</html>
